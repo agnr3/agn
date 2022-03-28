@@ -137,7 +137,7 @@ body{
 }
 .personal__container {
 	visibility: hidden;
-	left: 60%;
+	left: 65%;
   position: relative;
 }
 .personal__list:hover .personal__inner {
@@ -1124,9 +1124,12 @@ button:hover .button-text {
 		padding: 0%;
 		margin: 0 auto;
 	}
+	.nav__content{
+		margin: 0 auto;
+	}
 
 	.nav__logo{
-		margin: 0% 100%;
+		margin: 0% 90%;
 		padding: 0%;
 		height: 50px;
 	}
