@@ -30,7 +30,7 @@
 				<a href="index.html"><img src="assets/logoservicio.png" class="nav__logo" alt=""></a>
 				<a href="index.html" class="nav__items" id="selected">Inicio</a>
 				<a href="ubicacion.html" class="nav__items">Ubicacion</a>
-				<a href="" class="nav__items">Contacto</a>
+				<a href="contact.html" class="nav__items">Contacto</a>
 				<a href="" class="nav__items">Precios</a>
 
 				<!--<div class="personal__list container">
@@ -39,25 +39,6 @@
 	      				<div class="personal__hidden"></div>
 	    			</div>
 	  			</div>-->
-	  			<div class="personal__container" id="btn_open">
-		    		<button class="button" aria-pressed="false"><span class="sr-only button__info">Open Menu</span><span class="sr-only button__info">Close Menu</span><span class="button__icon icon"><span></span><span></span><span></span></span>
-	  					<svg class="sr-only">
-	    					<defs>
-	      						<filter id="goo">
-	        						<feGaussianBlur in="SourceGraphic" stdDeviation="4" result="BLUR"></feGaussianBlur>
-	        						<feColorMatrix in="BLUR" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 15 -7" result="GOO"></feColorMatrix>
-	        						<feBlend in="SourceGraphic" in2="goo">   </feBlend>
-	      						</filter>
-	    					</defs>
-	  					</svg>
-					</button>
-				</div>
-			</div>
-
-			<div class="menu__side" id="menu_side">
-	  			<div class="menu__content">
-	  				<a href="" class="menu__text">Menú</a>
-	  			</div>
 			</div>
 		</nav>
 		<div class="container">
@@ -217,8 +198,8 @@
 		<div class="container footer__grid">
 			<nav class="nav--footer">
 				<a class="nav__items--footer" href="index.html">Inicio</a>
-				<a class="nav__items--footer" href="ubicacion.html">Ubicación</a>
-				<a class="nav__items--footer" href="">Contacto</a>
+				<a class="nav__items--footer" href="">Ubicación</a>
+				<a class="nav__items--footer" href="contact.html">Contacto</a>
 				<a class="nav__items--footer" href="">Precios</a>
 			</nav>
 
@@ -261,20 +242,19 @@
 			<div class="container_bb">
 			    <div class="tabbar tab-style2">
 			      <ul class="flex-center" id="ulbottom">
-			        <li class="home active" data-where="home"><span class="material-icons-outlined">
+			        <a href="index.html" style="text-decoration: none;"><li class="home active" data-where="home"><span class="material-icons-outlined">
 			            home
-			          </span></li>
+			          </span></li></a>
 			        <li class="products" data-where="products" id="libottom"><span class="material-icons-outlined">
-			            shopping_bag
+			            place
 			          </span></li>
-			        <li class="services" data-where="services" id="libottom"><span class="material-icons-outlined">
-			            plumbing
-			          </span></li>
+			        <a href="contact.html" style="text-decoration: none;"><li class="services" data-where="services" id="libottom"><span class="material-icons-outlined">
+						perm_contact_calendar</span></li></a>
 			        <li class="about" data-where="about" id="libottom"><span class="material-icons-outlined">
-			            business
+			            shopping_cart
 			          </span></li>
 			        <li class="help" data-where="help" id="libottom"><span class="material-icons-outlined">
-			            help_outline
+			            settings
 			          </span></li>
 			      </ul>
 			    </div>
