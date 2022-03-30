@@ -942,3 +942,9 @@ button{
     height: 40px;
     min-height: 40px;
   }
+
+  @media screen and (max-height: 800px){
+  .hero__wave{
+    margin-top: 200px;
+  }
+}
