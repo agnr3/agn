@@ -359,8 +359,3 @@
     font-size: 2rem;
   }
 }
-@media screen and (max-height: 800px){
-  .hero__wave{
-    margin-top: 200px;
-  }
-}
