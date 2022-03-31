@@ -1,2 +1,2 @@
-https://agnr3.github.io/agn/
-https://agnr3.github.io/agn/contact
+https://agnr3.github.io/agn/index.html
+https://agnr3.github.io/agn/contact.html
