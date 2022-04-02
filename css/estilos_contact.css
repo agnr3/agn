@@ -13,11 +13,27 @@ body{
 	font-family: 'Raleway', sans-serif;
 	animation: linear fadein .5s;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	background: linear-gradient(-45deg, #000FFF1c, #6C00FF1c);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
 }
 
 *::selection{
 	background: rgb(255 242 63);
 	color: #6a6a6a;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 
@@ -301,6 +317,7 @@ body{
     width: 90%;
     border-radius: 30px;
     margin-top: 5%;
+    box-shadow: 0px 10px 10px 0px #6a6a6a5c;
 }
 
 form .grupo{
@@ -486,6 +503,19 @@ button{
 /*--------------------------------------------------------*/
 
 
+.paycards{
+	width: 100%;
+	padding: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.paycards__pictures{
+	width: 90%;
+	height: 90%;
+}
+
+
 /*-----------------config footer gral---------------------*/
 .footer{
 	background: var(--color-primary);
@@ -494,15 +524,17 @@ button{
 .footer__grid{
 	width: 100%;
 	display: grid;
-	grid-template-columns: 3fr 2fr;
-	gap: 20px;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
 	align-items: center;
+	padding-bottom: 0;
 }
 /*--------------------------------------------------------*/
 
 
 /*-----------------navegador footer-----------------------*/
-.nav--footer{
+/*.nav--footer{
 	font-weight: 300;
 	justify-content: flex-start;
 }
@@ -512,6 +544,47 @@ button{
 	font-weight: 500;
 	padding: 10px;
 	text-decoration: none;
+}*/
+/*--------------------------------------------------------*/
+
+
+/*---------------------sobre------------------------------*/
+.sobre__agn{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	height: 100%;
+	column-gap: 30px;
+}
+.footersobretitle{
+	text-align: center;
+	color: #fff;
+	border-bottom: 4px solid #fff;
+	margin-bottom: 15px;
+}
+.footersobreparagraph{
+	color: #fff;
+}
+
+/*--------------------------------------------------------*/
+
+
+/*--------------------pagos footer------------------------*/
+.footer__pagos{
+	padding-top: 30px;
+}
+.paycardsfooter__container{
+	padding: 10px;
+	margin-top: 0;
+	margin-bottom: 2%;
+	width: 30%;
+	height: 10%;
+	border-radius: 20px;
+	text-align: center;
+}
+.paycardsfooter__title{
+	padding-bottom: 10px;
+	color: #fff;
+	font-weight: 300;
 }
 /*--------------------------------------------------------*/
 
@@ -519,12 +592,15 @@ button{
 /*----------------footer contacto-------------------------*/
 .footer_contact{
 	margin: 0 auto;
+	width: 100%;
+	height: 100%;
 }
 
 .footer__title{
-	font-weight: 500;
+	border-bottom: 4px solid #fff;
+	font-weight: 700;
 	color: #fff ;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	margin: 0 auto;
 	margin-bottom: 30px;
 	text-align: center;
@@ -554,6 +630,7 @@ button{
   left: 21px;
   transition: all 265ms ease-out;
 }
+
 .social-icons a {
   display: inline-block;
 }
@@ -672,23 +749,62 @@ button{
 	}
 	/*--------------------------------------------*/
 
+	/*--------------------------------------------*/
+
+	.paycards__title{
+		font-size: 1.5rem;
+	}
+	.paycards__paragraph{
+		font-size: 1.2rem;
+	}
+
+	.paycards__container{
+		margin-top: 5%;
+		margin-bottom: 10%;
+		width: 80%;
+	}
+
+
+	/*--------------------------------------------*/
+
 
 	/*------------footer config gral--------------*/
 	.footer__grid{
+		margin: 0 auto;
 		grid-template-columns: 1fr;
+		padding-right: 0;
+		padding-left: 0;
+		width: 90%;
 	}
 	/*--------------------------------------------*/
 
 
 	/* -------------contacto footer-------------- */
 	.footer__title{
-		margin-top: 10%;
+		margin: 0 auto;
 		margin-bottom: 2%;
 	}
-
 	.footer__contact{
 		grid-row:  1/2;
 	}
+	.wrapper_footer{
+		margin: 0 auto;
+	}
+	.social-container{
+		margin: 0 auto;
+	}
+	.social-icons{
+		margin: 0 auto;
+	}
+	/*--------------------------------------------*/
+
+
+	/*---------------medio de pagos---------------*/
+
+	.paycardsfooter__container{
+		width: 60%;
+	}
+
 	/*--------------------------------------------*/
 
 
@@ -804,40 +920,68 @@ button{
 	/*------------FOOTER CONFIG GRAL-----------*/
 	.footer{
 	}
-	.footer__grid{
-		height: 40vh;
-		margin-bottom: -15%;
-		padding: 5%;
 
+	.footer__grid{
+		height: 50vh;
+		/**margin-bottom: -15%;*//
+		padding: 0;
+		padding-right: 0;
+		padding-left: 0;
+		width: 90%;
 	}
 	/*-----------------------------------------*/
+
+
+	/*-----------------------------------------*/
+	.sobre__agn{
+		padding-top: 20px;
+	}
+	.footersobretitle{
+		font-size: 0.9rem;
+	}
+	.footersobreparagraph{
+		font-size: 0.8rem;
+	}
+	/*-----------------------------------------*/
+
+
+	/*---------------medio de pagos---------------*/
+
+	.paycards__title{
+		padding-top: 20px;
+		padding-bottom: 0;
+	}
+
+	.paycardsfooter__container{
+		width: 100%;
+	}
+
+	.footer__pagos{
+		padding-top: 0%;
+	}
+
+	/*--------------------------------------------*/
 
 
 	/*------------FOOTER CONTACTO--------------*/
 	.footer_contact{
 		margin: 0 auto;
-		margin-bottom: 20%;
+		text-align: center;
 	}
 
 	.footer__title{
 		margin-top: 0;
-		margin-right: 8%;
-	}
-
-	.subtitle{
-		font-size: 2rem;
-		margin-bottom: 20px;
 	}
 
 	.wrapper_footer{
 		margin: 0 auto;
+		margin-right: 8%;
 	}
 	.social-container{
 		margin: 0 auto;
 	}
 	.social-icons{
 		margin: 0 auto;
-		margin-right: 8%;
 	}
 	/*-----------------------------------------*/
 
@@ -867,13 +1011,15 @@ button{
 
 
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 420px){
 	:root{
 		--boton-padding: 18px 35px;
 	}
+
+
 	/*--------------BOTON-WSPP-----------------*/
 	.btn-wsp{
-		bottom: 30px;
+		bottom: 6%;
 	}
 	/*-----------------------------------------*/
 
@@ -959,40 +1105,34 @@ button{
 	/*------------FOOTER CONFIG GRAL-----------*/
 	.footer{
 	}
-	.footer__grid{
-		height: 40vh;
-		margin-bottom: -15%;
-		padding: 5%;
 
+	.footer__grid{
+		height: 50vh;
+		margin-bottom: -15%;
+		padding: 0;
+		width: 95%;
+	}
+	/*-----------------------------------------*/
+
+
+	/*-----------------------------------------*/
+	.paycardsfooter__title{
+		margin-top: 30px;
+		padding-bottom: 0;
+	}
+
+	.footer__pagos{
 	}
 	/*-----------------------------------------*/
 
 
 	/*------------FOOTER CONTACTO--------------*/
 	.footer_contact{
-		margin: 0 auto;
-		margin-bottom: 20%;
+		margin-right: 10%;
 	}
 
 	.footer__title{
 		margin-top: 0;
-		margin-right: 11%;
-	}
-
-	.subtitle{
-		font-size: 2rem;
-		margin-bottom: 20px;
-	}
-
-	.wrapper_footer{
-		margin: 0 auto;
-	}
-	.social-container{
-		margin: 0 auto;
-	}
-	.social-icons{
-		margin: 0 auto;
-		margin-right: 11%;
 	}
 	/*-----------------------------------------*/
 
@@ -1023,13 +1163,13 @@ button{
 
 
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 375px){
 	:root{
 		--boton-padding: 18px 35px;
 	}
 	/*--------------BOTON-WSPP-----------------*/
 	.btn-wsp{
-		bottom: 30px;
+		bottom: 6%;
 	}
 	/*-----------------------------------------*/
 
@@ -1115,43 +1255,77 @@ button{
 	/*------------FOOTER CONFIG GRAL-----------*/
 	.footer{
 	}
-	.footer__grid{
-		height: 40vh;
-		margin-bottom: -15%;
-		padding: 5%;
 
+	.footer__grid{
+		height: 50vh;
+		padding: 0;
+		width: 95%;
+		margin: 0 auto;
+		margin-bottom: 0px;
+	}
+	/*-----------------------------------------*/
+
+
+	/*-----------------------------------------*/
+	.paycardsfooter__title{
+		margin-top: 30px;
+		padding-bottom: 0;
+	}
+
+	.footer__pagos{
+	}
+	/*-----------------------------------------*/
+
+	/*-----------------------------------------*/
+	.sobre__agn{
+		padding-top: 20px;
+	}
+	.footersobretitle{
+		font-size: 0.9rem;
+	}
+	.footersobreparagraph{
+		font-size: 0.7rem;
 	}
 	/*-----------------------------------------*/
 
 
 	/*------------FOOTER CONTACTO--------------*/
-	.footer_contact{
-		margin: 0 auto;
-		margin-bottom: 20%;
-	}
-
 	.footer__title{
-		margin-top: 0;
-		margin-right: 19%;
-		font-size: 1.5rem;
+		margin: 0 auto;
+		margin-bottom: 2%;
 	}
-
-	.subtitle{
-		font-size: 2rem;
-		margin-bottom: 20px;
+	.footer_contact{
+		display: grid;
+		margin: 0 auto;
 	}
-
 	.wrapper_footer{
 		margin: 0 auto;
+		width: 100%;
 	}
 	.social-container{
 		margin: 0 auto;
+		width: 100%;
 	}
 	.social-icons{
 		margin: 0 auto;
-		margin-right: 19%;
+		width: 100%;
 	}
 	/*-----------------------------------------*/
+
+
+	/*--------------foote pagos-------------------*/
+		.footer__pagos{
+			padding-top: 0px;
+			margin-top: 0px;
+		}
+		.paycardsfooter__container{
+			padding-top: 0;
+		}
+		.paycardsfooter__title{
+			margin-top: 0;
+
+		}
+	/*--------------------------------------------*/
 
 	
 	/*-----------WAVE MOVIMIENTO---------------*/
@@ -1182,13 +1356,13 @@ button{
 
 
 
-@media screen and (max-width: 280px){
+@media screen and (max-width: 300px){
 	:root{
 		--boton-padding: 18px 35px;
 	}
 	/*--------------BOTON-WSPP-----------------*/
 	.btn-wsp{
-		bottom: 30px;
+		bottom: 6%;
 	}
 	/*-----------------------------------------*/
 
@@ -1274,41 +1448,28 @@ button{
 	/*------------FOOTER CONFIG GRAL-----------*/
 	.footer{
 	}
+
 	.footer__grid{
+		justify-content: center;
 		height: 40vh;
 		margin-bottom: -15%;
-		padding: 5%;
-
+		padding: 0%;
 	}
 	/*-----------------------------------------*/
 
 
 	/*------------FOOTER CONTACTO--------------*/
 	.footer_contact{
-		margin: 0 auto;
+		margin-right: 0;
 		margin-bottom: 20%;
 	}
 
 	.footer__title{
 		margin-top: 0;
-		margin-right: 37%;
-		font-size: 1rem;
-	}
-
-	.subtitle{
-		font-size: 2rem;
-		margin-bottom: 20px;
-	}
-
-	.wrapper_footer{
-		margin: 0 auto;
+		font-size: 1.3rem;
 	}
 	.social-container{
-		margin: 0 auto;
-	}
-	.social-icons{
-		margin: 0 auto;
-		margin-right: 37%;
+		margin-left: 4%;
 	}
 	/*-----------------------------------------*/
 
