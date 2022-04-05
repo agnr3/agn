@@ -487,6 +487,7 @@ body{
 
 .item__content.active {
   max-height: 400px;
+  padding-bottom: 15px;
 }
 
 .item__answer {
