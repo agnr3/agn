@@ -479,17 +479,13 @@ body{
   font-weight: 600;
 }
 
-.active .item__content {
-  max-height: 400px;
-}
-
 .item__content {
   max-height: 0;
   overflow: hidden;
   transition: all 300ms ease;
 }
 
-.active .item__content {
+.item__content.active {
   max-height: 400px;
 }
 
