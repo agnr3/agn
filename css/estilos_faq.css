@@ -487,7 +487,7 @@ body{
   transition: all 300ms ease;
 }
 
-.item__content.active{
+.item__content .active {
 	max-height: 400px;
 	padding-bottom: 15px;
 }
