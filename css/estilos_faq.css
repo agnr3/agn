@@ -488,7 +488,7 @@ body{
 }
 
 .item__content.active{
-	max-height: 200px;
+	max-height: 250px;
 	padding-bottom: 15px;
 }
 
