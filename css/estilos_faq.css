@@ -488,8 +488,8 @@ body{
 }
 
 .item__content.active{
-	max-height: 200px;
-	padding-bottom: 15px;
+  max-height: 400px;
+  padding-bottom: 15px;
 }
 
 .item__answer {
