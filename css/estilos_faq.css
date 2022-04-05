@@ -485,8 +485,8 @@ body{
   transition: all 300ms ease;
 }
 
-.item__content.active{
-	max-height: 400px;
+.active .item__content {
+  max-height: 400px;
 }
 
 .item__answer {
