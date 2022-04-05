@@ -8,22 +8,27 @@
 
 
 <url>
-  <loc>http://agnriotercero.site/</loc>
+  <loc>http://www.agnriotercero.site/</loc>
   <lastmod>2022-03-31T19:02:43+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://agnriotercero.site/ubication</loc>
+  <loc>http://www.agnriotercero.site/ubication</loc>
   <lastmod>2022-03-31T19:02:43+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://agnriotercero.site/contact</loc>
+  <loc>http://www.agnriotercero.site/contact</loc>
   <lastmod>2022-03-31T19:02:43+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://agnriotercero.site/precios</loc>
+  <loc>http://www.agnriotercero.site/precios</loc>
+  <lastmod>2022-03-31T19:02:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.agnriotercero.site/faq</loc>
   <lastmod>2022-03-31T19:02:43+00:00</lastmod>
   <priority>0.80</priority>
 </url>
