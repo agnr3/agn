@@ -17,7 +17,8 @@
     visibility: visible;
     position: sticky;
     bottom: 0;
-    z-index: 100;
+    -webkit-transform: translate3d(0,0,100);
+    /*z-index: 100;*/
   }
 
 
