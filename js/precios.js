@@ -76,7 +76,6 @@ document.querySelectorAll(".button").forEach((button) => {
     svgPath.smoothing = 0;
 
     button.addEventListener("click", (e) => {
-        e.preventDefault();
 
         if (!button.classList.contains("loading")) {
             button.classList.add("loading");
