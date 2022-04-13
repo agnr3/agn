@@ -623,6 +623,7 @@ button:hover .hero_button {
 	margin-bottom: 30px;
 }
 .ofertas__button{
+	text-decoration: none;
 	background-color: #fff;
 	color: #6a6a6a;
 	font-size: 2rem;
@@ -634,11 +635,15 @@ button:hover .hero_button {
 	transition: 0.5s;
 }
 .ofertas__button:hover {
-	background-color: #fff;
+	background-color: #BE33FF;
+	text-shadow: 1px 0 0 #fff, 
+	-1px 0 0 #fff, 0 1px 0 #fff, 
+	0 -1px 0 #fff, 1px 1px #fff, 
+	-1px -1px 0 #fff, 1px -1px 0 #fff, 
+	-1px 1px 0 #fff;
 	box-shadow: 0 0 10px 5px #BE33FF;
-	color: #6a6a6a;
+	color: #BE33FF;
 	font-weight: 700;
-	border-radius: 5px;
 }
 
 .ofertas__aclaration{
