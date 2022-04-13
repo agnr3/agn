@@ -15,6 +15,7 @@
 
   .bottombar_responsive{
     visibility: visible;
+    -webkit-visibility: visible;
     position: sticky;
     bottom: 0;
     z-index: 100;
