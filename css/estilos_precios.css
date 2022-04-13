@@ -826,7 +826,7 @@ html {
 }
 .modal__container{
 	margin: 0 auto;
-	margin-top: 10%;
+	margin-top: 7%;
 	position: relative;
 	background-color: #fff;
 	width: 0;
@@ -836,12 +836,12 @@ html {
 	overflow: hidden;
 	transition: .2s;
 	display: grid;
-	grid-template-rows: 17% 83%;
+	grid-template-rows: 10% 90%;
 	box-shadow: 0 0 30px 2px #0000004c;
 }
 .modal__container.active{
 	width: 70%;
-	height: 42%;
+	height: 60%;
 }
 .modal__format{
 	background-color: #0000001a;
@@ -851,14 +851,14 @@ html {
 	grid-template-columns: 95% 5%;
 }
 .modal__windowstitle{
-	padding-top: 20px;
+	padding-top: 1%;
 	padding-left: 20px;
 	color: #6a6a6a;
 
 }
 .modal__close{
 	cursor: pointer;
-	padding-top: 22px;
+	padding-top: 30%;
 	color: #6a6a6a;
 	transition: .5s;
 }
@@ -872,7 +872,7 @@ html {
 	grid-template-columns: 30% 70%;
 }
 .modal__picture{
-	object-fit: none;
+	object-fit: cover;
 	width: 100%;
 	height: 100%;
 }
@@ -920,11 +920,11 @@ html {
 @media screen and (max-width:  900px){
 	.modal__container{
 		margin: 0 auto;
-		margin-top: 25%;
+		margin-top: 10%;
 	}
 	.modal__container.active{
-		width: 70%;
-		height: 50%;
+		width: 75%;
+		height: 65%;
 	}
 	.modal__format{
 		background-color: #0000001a;
@@ -934,13 +934,13 @@ html {
 		grid-template-columns: 90% 10%;
 	}
 	.modal__windowstitle{
-		padding-top: 25px;
+		padding-top: 1%;
 		padding-left: 20px;
 		color: #6a6a6a;
 
 	}
 	.modal__close{
-		padding-top: 30px;
+		padding-top: 10%;
 		padding-right: 30px;
 	}
 	.modal__content{
@@ -1066,11 +1066,11 @@ html {
 
 	.modal__container{
 		margin: 0 auto;
-		margin-top: 25%;
+		margin-top: 10%;
 	}
 	.modal__container.active{
-		width: 70%;
-		height: 55%;
+		width: 80%;
+		height: 65%;
 	}
 	.modal__format{
 		background-color: #0000001a;
@@ -1080,13 +1080,13 @@ html {
 		grid-template-columns: 90% 10%;
 	}
 	.modal__windowstitle{
-		padding-top: 25px;
+		padding-top: 1%;
 		padding-left: 20px;
 		color: #6a6a6a;
 
 	}
 	.modal__close{
-		padding-top: 30px;
+		padding-top: 10%;
 		padding-right: 30px;
 	}
 	.modal__content{
@@ -1331,11 +1331,11 @@ html {
 
 	.modal__container{
 		margin: 0 auto;
-		margin-top: 25%;
+		margin-top: 20%;
 	}
 	.modal__container.active{
 		width: 90%;
-		height: 55%;
+		height: 60%;
 	}
 	.modal__format{
 		background-color: #0000001a;
@@ -1345,14 +1345,14 @@ html {
 		grid-template-columns: 90% 10%;
 	}
 	.modal__windowstitle{
-		padding-top: 10%;
+		padding-top: 1%;
 		padding-left: 20px;
 		color: #6a6a6a;
 		font-size: 1.3rem;
 
 	}
 	.modal__close{
-		padding-top: 100%;
+		padding-top: 15%;
 		padding-right: 30px;
 	}
 	.modal__content{
@@ -1365,7 +1365,7 @@ html {
 	}
 	.modal__contenttitle{
 		padding: 5%;
-		padding-top: 5%;
+		padding-top: %;
 		font-size: 1rem;
 	}
 	.modal__contentparagraph{
@@ -1729,9 +1729,10 @@ html {
 	/*-----------------------------------------*/
 	.modal__windowstitle{
 		font-size: 1rem;
+		padding-top: 4%;
 	}
 	.modal__close{
-		padding-top: 80%;
+		padding-top: 30%;
 	}
 	.modal__container.active{
 		width: 90%;
