@@ -207,7 +207,7 @@ body{
 /*---------------------header-----------------------------*/
 .hero{
 	height: 90vh;
-	background-image: var(--background), url("https://www.agnriotercero.site/Background1.jpg");
+	background-image: var(--background), url("https://www.agnriotercero.site/assets/Background1.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
